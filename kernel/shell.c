@@ -99,7 +99,7 @@ static void login_prompt(void) {
     int attempts = 0;
 
     while (attempts < 3) {
-        vga_write("kTTY 1.0.0rc1 tty1\n", 0x0F);
+        vga_write("kTTY 1.0.0rc2 tty1\n", 0x0F);
         vga_write("login: ", 0x0F);
         read_string(username, MAX_USERNAME, 1);
         vga_write("password: ", 0x0F);
