@@ -10,7 +10,7 @@ ISO_DIR = iso
 CC = gcc
 AS = nasm
 LD = gcc
-GRUB = grub-mkrescue
+GRUB ?= grub-mkrescue
 
 CFLAGS = -m32 -ffreestanding -fno-stack-protector -fno-pic -fno-PIE \
          -Wall -Wextra -I$(INC) -nostdlib -O0 -g -mno-sse -mno-sse2
